@@ -3,7 +3,7 @@ This repository contains samples demonstrating how to use the Signature Capture 
 ## Sign Here
 Example Lightning application that pulls the id of the record to attach the signature to from the URL. Located at src/aura/SignHere.
 ## Signature Captured Notifier
-Example Lightning component that consumes the SignatureCapturedEvt application event and generates a toast message.
+Example Lightning component that consumes the SignatureCapturedEvt application event and generates a toast message. Located at src/aura/SigCapNotifier. Add this to a Lightning page that contains the SignatureCapture component, and you will be notified when a signature has been successfully captured, with the Id of the record it was captured for.
 ## Lightning Component Action
 The Winter 17 release of the Signature Capture package includes a lightning component action for capturing a signature. Read about how to set this up in the [blog post](http://bobbuzzard.blogspot.co.uk/2016/11/lightning-component-actions-with.html)
 ## Custom Lightning Component Action
