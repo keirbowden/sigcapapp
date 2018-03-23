@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes">
+		<!-- Handlers -->
+<!--    <aura:handler event="BGSIGCAP:SignatureCapturedEvt" action="{!c.handleCaptured}"/> -->
+
+</aura:component>
