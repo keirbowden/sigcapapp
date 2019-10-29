@@ -1,0 +1,34 @@
+<aura:component implements="lightning:availableForFlowScreens">
+    <aura:attribute access="global" name="startMsg" type="String" default="Click the 'Capture Signature' button to begin" 
+                     description="Message to display to the user to start the signature capture process"/>
+    <aura:attribute access="global" name="enterMsg" type="String" default="Sign here please" 
+                     description="Text to display above the signature capture canvas" />
+    <aura:attribute access="global" name="completeMsg" type="String" default="Here is the captured signature" 
+                     description="Text to display above the image of the captured signature once it has been saved to the server"/>
+    <aura:attribute access="global" name="recordId" type="String"
+                     description="The id of the record to attach the signature to"/>
+    <aura:attribute access="global" name="saveAttachment" type="Boolean" default="true" 
+                     description="Save signature as attachment (true) or file (false)" />
+    <aura:attribute access="global" name="width" type="String" required="true" default="100%"
+                    description="Width of the signature capture canvas"/>
+    <aura:attribute access="global" name="height" type="String" required="true" default="300px"
+                    description="Height of the signature capture canvas"/>
+    <aura:attribute access="global" name="captureButtonLabel" type="String" default="Capture Signature" 
+                     description="Label for the capture signature button" />
+    <aura:attribute access="global" name="saveButtonLabel" type="String" default="Save" 
+                     description="Label for the save button" />
+    <aura:attribute access="global" name="clearButtonLabel" type="String" default="Clear" 
+                     description="Label for the clear button" />
+    <aura:attribute access="global" name="skipToCapture" type="Boolean" default="false" 
+                     description="Skip straight to capturing a signature without prompting the user or waiting for a button click" />	
+    
+    <aura:handler event="BGSIGCAP:SignatureCapturedEvt" action="{!c.handleCaptured}"/> 
+
+    <BGSIGCAP:SignatureCapture startMsg="{!v.startMsg}" enterMsg="{!v.enterMsg}"
+                               completemsg="{!v.completeMsg}" recordId="{!v.recordId}"
+                               saveAttachment="{!v.saveAttachment}" width="{!v.width}"
+                               height="{!v.height}" captureButtonLabel="{!v.captureButtonLabel}"
+                               saveButtonLabel="{!v.saveButtonLabel}" clearButtonLabel="{!v.clearButtonLabel}"
+                               skipToCapture="{!v.skipToCapture}" />
+
+</aura:component>
