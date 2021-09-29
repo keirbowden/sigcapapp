@@ -1,5 +1,17 @@
 # Signature Capture Release Notes
  
+## V3.5
+
+- Fixed issue where component became uneditable after multiple records viewed - https://github.com/keirbowden/sigcapapp/issues/26
+
+## V3.3
+
+- Minor changes to pass app exchange rereview.
+
+## V3.0
+
+- Rebranded to BrightSIGN
+
 ## V2.2
 
 - Added support for Surface Pro and Edge Chromium.
