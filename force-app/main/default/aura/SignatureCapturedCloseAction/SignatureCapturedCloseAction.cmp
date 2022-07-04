@@ -1,0 +1,5 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickAction" access="global" >
+    <!-- Handlers -->
+    <aura:handler event="BGSIGCAP:SignatureCapturedEvt" action="{!c.handleCaptured}"/>
+    <BGSIGCAP:SignatureCapture recordId="{!v.recordId}" />
+</aura:component>
