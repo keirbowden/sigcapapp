@@ -1,0 +1,9 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickAction" access="global" >
+    <BGSIGCAP:SignatureCapture recordId="{!v.recordId}" 
+                               startMsg="Click the Let's Go button to start"
+                               enterMsg="Put your John Hancock here"
+                               completeMsg="What do you think?"
+                               captureButtonLabel="Let's Go"
+                               saveButtonLabel="All good!"
+                               clearButtonLabel="Next time's the charm"/>
+</aura:component>

@@ -1,0 +1,23 @@
+<design:component>
+ <design:attribute name="startMsg" label="Start Message" 
+                     description="Message to display to the user to start the signature capture process"/>
+    <design:attribute name="enterMsg" label="Enter Message"
+                     description="Text to display above the signature capture canvas" />
+    <design:attribute name="completeMsg" label="Complete Message"
+                     description="Text to display above the image of the captured signature once it has been saved to the server"/>
+    <design:attribute name="width" label="Canvas Width"
+                    description="Width of the signature capture canvas"/>
+    <design:attribute name="height" label="Canvas Height"
+                    description="Height of the signature capture canvas"/>
+    <design:attribute name="recordId" label="Record Id" required="false" />
+    <design:attribute name="saveAttachment" label="Save Attachment" 
+                     description="Save signature as attachment (true) or file (false)" />
+    <design:attribute name="captureButtonLabel" label="Capture Button Label" 
+                     description="Label for the capture signature button" />
+    <design:attribute name="saveButtonLabel" label="Save Button Label" 
+                     description="Label for the save button" />
+    <design:attribute name="clearButtonLabel" label="Clear Button Label" 
+                     description="Label for the clear button" />
+    <design:attribute name="skipToCapture" label="Skip to capture?" 
+                     description="Skip straight to capturing a signature without prompting the user or waiting for a button click" />	
+</design:component>

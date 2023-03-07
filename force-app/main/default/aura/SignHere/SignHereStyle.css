@@ -1,0 +1,23 @@
+.THIS .main
+{
+    margin: 10px;
+}
+.THIS h1
+{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 1.7em;
+}
+
+.THIS p
+{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 1.4em;
+}

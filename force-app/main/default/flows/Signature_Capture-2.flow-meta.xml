@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Signature Capture {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Signature Capture</label>
+    <processType>Flow</processType>
+    <screens>
+        <name>Signature_Capture</name>
+        <label>Signature Capture</label>
+        <locationX>263</locationX>
+        <locationY>159</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>SigCap</name>
+            <extensionName>BGSIGCAP:SignatureCapture</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>height</name>
+            </inputParameters>
+            <inputParameters>
+                <name>width</name>
+            </inputParameters>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>recordId</elementReference>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Signature_Capture</startElementReference>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>
