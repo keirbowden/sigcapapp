@@ -1,5 +1,5 @@
-# Signature Capture Samples
-This repository contains samples demonstrating how to use the Signature Capture lightning component. The Lightning Component is available on the [app exchange](https://appexchange.salesforce.com/listingDetail?listingId=a0N30000000q5XOEAY)
+# BrightSIGN Samples
+This repository contains samples demonstrating how to use the BrightSIGN lightning component. The Lightning Component is available on the [app exchange](https://appexchange.salesforce.com/listingDetail?listingId=a0N30000000q5XOEAY)
 ## Sign Here
 Example Lightning application that pulls the id of the record to attach the signature to from the URL. Located at src/aura/SignHere.
 ## Signature Captured Notifier
@@ -14,3 +14,5 @@ Include a Signature Capture screen in a Lightning Flow - see the [blog post](htt
 Automatically finish a Lightning Flow when the signature is captured - see the [blog post](https://bobbuzzard.blogspot.com/2019/10/auto-completing-signature-capture-flow.html) and check out the example flow at src/flows/SigCap-4.flow and associated Lightning Component at src/aura/SigCapFlowWithFinish
 ## Auto-close quick action
 Automatically close a quick action when the signature is captured. The [SignatureCapturedCloseAction](https://github.com/keirbowden/sigcapapp/tree/master/force-app/main/default/aura/SignatureCapturedCloseAction) embeds the BrightSIGN component into a quick action and adds a listener for the SignatureCaptured event. When this event is received, it fires a toast message to inform the user that the signature was captured and closes the action.
+## Update Record when Signed
+Update a field on the parent record when the signature image is saved. The [SigCapUpdateRecord](https://github.com/keirbowden/sigcapapp/tree/master/force-app/main/default/aura/SigCapUpdateRecord) component receives the Signature Captured event and uses the force:recordData component to set a checkbox on the parent record indicating that it has been signed. 
