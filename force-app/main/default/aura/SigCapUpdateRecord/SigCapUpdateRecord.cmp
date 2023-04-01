@@ -1,0 +1,15 @@
+<aura:component implements="force:hasRecordId,flexipage:availableForAllPageTypes">
+
+    <aura:handler event="BGSIGCAP:SignatureCapturedEvt" action="{!c.handleCaptured}"/>
+
+	<aura:attribute name="theRecordFields" type="Object"/>
+    <aura:attribute name="recordLoadError" type="String"/>
+    
+    <force:recordData aura:id="recordUpdater"
+    recordId="{!v.recordId}"
+    fields="Signature_Captured__c"
+    targetFields="{!v.theRecordFields}"
+    targetError="{!v.recordLoadError}"
+    mode="EDIT"
+    />    
+</aura:component>
