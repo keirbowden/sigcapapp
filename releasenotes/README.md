@@ -1,4 +1,8 @@
 # Signature Capture Release Notes
+
+## V3.8
+
+Updated Apex class API versions to 61.0
  
 ## V3.5
 
