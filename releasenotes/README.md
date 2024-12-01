@@ -1,5 +1,9 @@
 # Signature Capture Release Notes
 
+## V4.1
+
+Added support for guest users to create signatures. Note that these will be orphaned Files - please see the implementation guide for full details.
+
 ## V3.8
 
 Updated Apex class API versions to 61.0
