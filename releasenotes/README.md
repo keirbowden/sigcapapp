@@ -1,4 +1,9 @@
-# Signature Capture Release Notes
+# BrightSIGN Release Notes
+
+## V4.2
+
+Fixed bug in multi-variant component related to orphaned Files. 
+Upped API versions of Apex code.
 
 ## V4.1
 
